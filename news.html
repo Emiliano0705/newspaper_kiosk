@@ -1,0 +1,48 @@
+<html>
+
+  <head>
+    <title>Noticias</title>
+    <style></style>
+  </head>
+
+  <body>
+    <iframe name="cuadro" height="500px" src="https://www.latimes.com/" width="100%"></iframe>
+    <button id="back" onclick="atras(-1)">
+      BACK
+    </button>
+    <button id="next" onclick="adelante(1)">
+      NEXT
+    </button>
+  </body>
+<script>
+var iframe=document.getElementsByTagName("cuadro")
+list=["https://www.abc.com.py/","https://www.ultimahora.com/"]
+ iframe=list[0]
+ cont=0
+ function atras(num){
+    cont+=num
+    if (cont<0){
+        cont=list.length-1
+    }
+    if (cont>list.length-1){
+        cont=0
+    }
+    else{
+        c=list.length-1
+    }
+ }
+ function adelante(num){
+    cont+=num
+    if(cont>=0){
+        cont=+1
+    }
+    if (cont=list.length){
+        c=0
+    }
+    else{
+        cont+=1
+    }
+    var a1=getElementsByTagName('cuadro')
+ }
+</script>
+</html>
